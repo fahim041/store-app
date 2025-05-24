@@ -7,7 +7,7 @@ spring:
     password: root1234
   flyway:
     clean-disabled: true
-    enabled: true
+    enabled: false
   jpa:
     hibernate:
       ddl-auto: validate
