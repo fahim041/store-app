@@ -1,9 +1,9 @@
 package com.core.entity;
 
 import jakarta.persistence.*;
-
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "categories")
@@ -17,5 +17,5 @@ public class Category {
     private String name;
 
     @OneToMany(mappedBy = "category")
-    private List<Product> products = new ArrayList<>();
+    private Set<Product> products = new HashSet<>();
 }
