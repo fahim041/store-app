@@ -1,10 +1,8 @@
-package com.core.entity;
+package com.core.entities;
 
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
 @Table(name = "products")
